@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Teste HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.15);
+        }
+
+        h2 {
+            color: #0077cc;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        button {
+            background: #0077cc;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background: #0077cc;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Página de Teste HTML</h1>
+    <p>Exemplo para praticar HTML, CSS e JavaScript</p>
+</header>
+
+<section>
+
+    <h2>Parágrafo</h2>
+
+    <p>
+        Esta é uma página criada para testes.
+        Ela contém diversos componentes utilizados em sites.
+    </p>
+
+    <hr>
+
+    <h2>Lista</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <h2>Imagem</h2>
+
+    <img src="https://picsum.photos/600/250"
+         alt="Imagem de exemplo">
+
+    <hr>
+
+    <h2>Formulário</h2>
+
+    <form>
+
+        <label>Nome</label>
+        <input type="text" placeholder="Digite seu nome">
+
+        <label>E-mail</label>
+        <input type="email" placeholder="Digite seu e-mail">
+
+        <label>Curso</label>
+
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select>
+
+        <button type="button" onclick="enviar()">
+            Enviar
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Tabela</h2>
+
+    <table>
+
+        <tr>
+            <th>Nome</th>
+            <th>Curso</th>
+            <th>Nota</th>
+        </tr>
+
+        <tr>
+            <td>Israel</td>
+            <td>HTML</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>CSS</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>João</td>
+            <td>JavaScript</td>
+            <td>8</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<footer>
+    Desenvolvido para estudos de HTML • 2026
+</footer>
+
+<script>
+
+function enviar() {
+    alert("Formulário enviado com sucesso!");
+}
+
+</script>
+
+</body>
+</html>
