@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Empresa</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+    }
+
+    header{
+      background:linear-gradient(135deg,#0f172a,#2563eb);
+      color:#fff;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:42px;
+      margin-bottom:15px;
+    }
+
+    header p{
+      font-size:18px;
+      opacity:.9;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:50px auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+    }
+
+    .card{
+      background:#fff;
+      padding:35px;
+      border-radius:15px;
+      box-shadow:0 15px 35px rgba(0,0,0,.08);
+    }
+
+    .card h2{
+      margin-bottom:20px;
+      color:#1e3a8a;
+    }
+
+    .info{
+      margin-bottom:20px;
+    }
+
+    .info strong{
+      display:block;
+      color:#1e40af;
+      margin-bottom:5px;
+    }
+
+    .info p{
+      color:#555;
+    }
+
+    form label{
+      display:block;
+      margin:15px 0 8px;
+      font-weight:bold;
+    }
+
+    input,
+    textarea{
+      width:100%;
+      padding:14px;
+      border:1px solid #d1d5db;
+      border-radius:8px;
+      font-size:15px;
+      transition:.3s;
+    }
+
+    input:focus,
+    textarea:focus{
+      border-color:#2563eb;
+      outline:none;
+      box-shadow:0 0 8px rgba(37,99,235,.25);
+    }
+
+    textarea{
+      resize:vertical;
+      min-height:140px;
+    }
+
+    button{
+      width:100%;
+      margin-top:25px;
+      padding:15px;
+      background:#2563eb;
+      color:#fff;
+      border:none;
+      border-radius:8px;
+      font-size:17px;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    button:hover{
+      background:#1d4ed8;
+    }
+
+    iframe{
+      width:100%;
+      height:280px;
+      border:none;
+      border-radius:10px;
+      margin-top:25px;
+    }
+
+    footer{
+      background:#0f172a;
+      color:#fff;
+      text-align:center;
+      padding:25px;
+      margin-top:50px;
+    }
+
+    @media(max-width:900px){
+
+      .container{
+        grid-template-columns:1fr;
+      }
+
+      header h1{
+        font-size:32px;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Entre em Contato</h1>
+
+<p>
+Estamos prontos para atender você.
+Envie sua mensagem e retornaremos o mais breve possível.
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Informações de Contato</h2>
+
+<div class="info">
+<strong>📍 Endereço</strong>
+<p>Rua Exemplo, 123 - Centro - Sua Cidade</p>
+</div>
+
+<div class="info">
+<strong>📞 Telefone</strong>
+<p>(00) 0000-0000</p>
+</div>
+
+<div class="info">
+<strong>📱 WhatsApp</strong>
+<p>(00) 90000-0000</p>
+</div>
+
+<div class="info">
+<strong>✉️ E-mail</strong>
+<p>contato@empresa.com.br</p>
+</div>
+
+<div class="info">
+<strong>🕒 Horário de Atendimento</strong>
+<p>Segunda a Sexta - 08:00 às 18:00</p>
+</div>
+
+<iframe
+src="https://www.google.com/maps?q=São+Paulo&output=embed">
+</iframe>
+
+</div>
+
+<div class="card">
+
+<h2>Envie uma Mensagem</h2>
+
+<form id="contato">
+
+<label>Nome Completo</label>
+<input
+type="text"
+id="nome"
+placeholder="Digite seu nome"
+required>
+
+<label>E-mail</label>
+<input
+type="email"
+id="email"
+placeholder="Digite seu e-mail"
+required>
+
+<label>Telefone</label>
+<input
+type="tel"
+id="telefone"
+placeholder="(00) 00000-0000">
+
+<label>Assunto</label>
+<input
+type="text"
+id="assunto"
+placeholder="Assunto">
+
+<label>Mensagem</label>
+
+<textarea
+id="mensagem"
+placeholder="Digite sua mensagem..."
+required>
+</textarea>
+
+<button type="submit">
+Enviar Mensagem
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Empresa LTDA • Todos os direitos reservados.
+
+</footer>
+
+<script>
+
+document.getElementById("contato").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const nome = document.getElementById("nome").value;
+
+alert("Obrigado, " + nome + "! Sua mensagem foi enviada com sucesso.");
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
